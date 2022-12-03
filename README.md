@@ -1,1 +1,1 @@
-# bs-blog
+# bootstrap-blog
