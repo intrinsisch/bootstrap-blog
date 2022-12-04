@@ -2,8 +2,6 @@ import { Component } from "solid-js";
 
 import authorsPortrait from "../../assets/images/floppy-ears.jpg";
 
-console.log(authorsPortrait);
-
 export const Bio: Component = () => {
   return (
     <div>
