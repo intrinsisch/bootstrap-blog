@@ -1,6 +1,8 @@
-import { Component } from "solid-js";
+import { Component, createSignal } from "solid-js";
 
 export const Navbar: Component = () => {
+  const [collapsed, setCollapsed] = createSignal(true);
+
   return (
     <nav class="navbar navbar-expand-lg sticky-top bg-warning">
       <div class="container-fluid">
@@ -10,15 +12,15 @@ export const Navbar: Component = () => {
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          aria-expanded={collapsed() ? "false" : "true"}
           aria-label="Toggle navigation"
+          onClick={() => {
+            setCollapsed((c) => !c);
+          }}
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class={`collapse navbar-collapse ${collapsed() || "show"}`}>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
