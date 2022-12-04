@@ -1,9 +1,14 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
+import { Footer } from "./components/main/Footer";
+import { Main } from "./components/main/Main";
+import { Navbar } from "./components/main/Navbar";
 
-const App: Component = () => {
+export const App: Component = () => {
   return (
-    <h1>Bootstrap: Blog</h1>
+    <>
+      <Navbar />
+      <Main />
+      <Footer />
+    </>
   );
 };
-
-export default App;
