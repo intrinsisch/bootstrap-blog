@@ -1,3 +1,5 @@
+**Moved: https://github.com/intrinsisch/intrinsisch/commit/ffc531805b36e60ab1382219afc118a9e2817964**
+
 # bootstrap-blog
 
 Automatically deployed by Netlify to [https://bs.blog.intrinsisch.lvl8.io/](https://bs.blog.intrinsisch.lvl8.io/)
